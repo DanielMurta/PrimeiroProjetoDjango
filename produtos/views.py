@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # Cliente faz um requeste(Pedido) e o Servidor devolve uma response
 
 def ver_produto(request):  # Requisição do usuário
-    return render(request, 'ver_produto.html')
+    return render(request, 'ver_produto.html', {'nome':'Daniel'})
 
 def inserir_produto(requeste):
-    return HttpResponse('Inserindo Produtos')
+    return render(requeste, 'inserir_produto.html')

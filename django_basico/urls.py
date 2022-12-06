@@ -20,5 +20,6 @@ from django.urls import path, include
 # Quando acessar o dominio produtos/ ele vai chamar o app produtos, arq 'url'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('produtos/', include('produtos.urls'))
+    path('produtos/', include('produtos.urls')),
+    path('clientes/', include('clientes.urls')),
 ]
